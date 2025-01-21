@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand{
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+*{
+ margin: 0;
+ padding: 0;
+ font-family: Quicksand ;
+}
+
+/* navbar style */
+
+.navbar{
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  /*margin-top: 20px;*/
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: black;
+}
+
+.school{
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.item-container{
+  display: flex;
+  list-style: none;
+  gap: 35px;
+ 
+}
+
+.item1{
+  list-style: none;
+  text-decoration: none;
+  color:Orange ;
+}
+.item2{
+  list-style: none;
+  text-decoration: none;
+  color:skyblue;
+}
+.item3{
+  list-style: none;
+  text-decoration: none;
+  color: rgb(5, 212, 223);
+}
+.item4{
+  list-style: none;
+  text-decoration: none;
+  color: rgb(93, 88, 239);
+}
+
+.nav-btn{
+  height: 35px;
+  width: 120px;
+  background-color: Orange;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.dot-icon{
+display: none;
+}
+
+/* banner section style */
+
+.banner-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.banner-text{
+  margin-left:20px ;
+}
+.orange{
+  color: orange;
+  font-size: 50px;
+}
+.black{
+  color: black;
+  font-size: 50px;
+}
+.blue{
+  color: skyblue;
+  font-size: 50px;
+}
+.banner-des{
+  color: rgb(17, 17, 17);
+  font-size: 20px;
+  margin: 20px 0px;
+}
+.enroll-btn{
+  background-color: black;
+  color:white;
+  border: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+}
+.hero-image img{
+  width: 100%;
+  /*width: 400px;*/
+}
+
+/*Standard Curriculum section*/
+
+.Standard-container{
+background-image: url(../B11-A2-Kids-School/assets/bg.png);
+/*height: 900px;*/
+width: 100%;
+
+}
+.Standard-title{
+  font-size: 40px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding-top: 70px;
+}
+
+
+.card-container{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 40px;
+  margin-top: 30px;
+  
+}
+.card{
+  background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  height: auto;
+  width: 280px;
+  padding: 20px;
+  border-radius: 7px;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid wheat;
+}
+.card2{
+  background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  height: auto;
+  width: 280px;
+  padding: 20px;
+  border-radius: 7px;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid wheat;
+}
+.card3{
+  background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  height: auto;
+  width: 280px;
+  padding: 20px;
+  border-radius: 7px;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid wheat;
+}
+
+.kinder{
+  color: rgb(32, 32, 32);
+  font-size: 24px;
+  font-weight: bold;
+}
+.card-title{
+  color: rgba(128, 128, 128, 1);
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 20px;
+}
+.card, .card2, .card3, img{
+  height: px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.read-btn{
+color:rgb(100, 200, 255) ;
+}
+.read-btn2{
+color: rgb(240, 170, 0);
+
+}
+.read-btn3{
+color:rgb(135, 0, 255) ;
+}
+.read-btn,.read-btn2,.read-btn3{
+  margin-bottom: 20px;
+  font-size: 15px;
+font-weight: bold;
+}
+
+.angle {
+  display: flex;
+  gap: 25px;
+ justify-content: center;
+ 
+}
+.angle1{
+  color: white;
+ height: 30px;
+ width: 30px;
+ justify-content: center;
+ background-color: orange;
+ border-radius: 50px;
+ color: orange;
+}
+.angle2{
+  color: white;
+ height: 30px;
+ width: 30px;
+ justify-content: center;
+ 
+}
+
+/* our story section */
+.stories-container{
+  background-image: url(../B11-A2-Kids-School/assets/bg.png);
+  width: 100%;
+  height: auto;
+  margin-top: 80px;
+}
+
+.card-story{
+  /*display: grid;*/
+  /*grid-template-columns: repeat(2, 2fr);*/
+  /*grid-template-rows: repeat(2, 200px 200px );*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px 0;*/
+}
+.card-image{
+  /*display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px 0;*/
+}
+
+.main-title{
+  color:  rgb(0, 0, 0);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.card-story{
+  border: 1px solid orange;
+  margin-top: 50px;
+}
+.card-image{
+  height: 600px;
+  width: 540px;
+  border-radius: 5px;
+  background-color: wheat;
+  
+}
+
+.story-btn{
+  background-color:rgb(60, 216, 232);
+  margin-top: -800px;
+  height: 45px;
+  width: 150px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  margin-left: 40px;
+}
+.story-title{
+  color:  rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 40px;
+}
+.story-des{
+  color: rgb(102, 102, 102);
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+
+/* group style start */
+.card-image,
+.card-image2,
+.card-image3,
+.card-image4,
+.card-image5 img{
+margin: 0px;
+border-top-right-radius: 5px;
+}
+
+.card-image2,
+.card-image3,
+.card-image4,
+.card-image5{
+  width: 290px;
+  height: 310px;
+  border-radius: 5px;
+  background-color: wheat;
+  
+}
+
+
+.story-btn1,
+.story-btn2,
+.story-btn3,
+.story-btn4{
+  background-color:rgb(149, 178, 38);
+  margin-top: -800px;
+  height: 35px;
+  width: 140px;
+  color: white;
+  font-size: 13px;
+  border: none;
+  border-radius: 30px;
+  margin-left: 20px;
+}
+.story-btn2{
+  background-color:rgb(93, 88, 240);
+}
+
+.story-title1,
+.story-title2,
+.story-title3,
+.story-title4{
+  color:  (0, 0, 0);
+  font-size: 14px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 20px;
+}
+/* group style end */
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive section */
+/* navbar responsive */
+@media screen and (max-width:576px) {
+  .navbar{
+    justify-content: space-between;
+   
+  }
+  .navbar{
+    border: 1px solid orange;
+    width: 100%;
+  }
+  .logo img{
+    margin-left: 20px;
+  }
+  .school{
+    display: none;
+  }
+  .item-container{
+    display: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .nav-btn{
+    display: none;
+  }
+  .dot-icon{
+    display: block;
+    
+    text-align: end;
+  }
+   
+   /*banner section */
+   
+  .banner-container{
+   flex-direction: column-reverse;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0 auto;
+   
+  }
+  .hero-image{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .banner-text{
+    text-align: center;
+  }
+  .orange,
+  .black,
+  .blue{
+    font-size: 30px;
+  }
+  .banner-des{
+    font-size: 16px;
+  }
+  /* Standard Curriculum section */
+  .Standard-title{
+    text-align: center;
+  }
+  .card-container{
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    gap: 0;
+  }
+  .card,
+  .card2,
+  .card3{
+    padding: 0px;
+  
+  }
+  .angle{
+    display: none;
+  }
+  /* our story section */
+  
+    .stories-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .story.large {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+  }
+  
