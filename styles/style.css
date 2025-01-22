@@ -8,6 +8,7 @@
 *{
  margin: 0;
  padding: 0;
+ box-sizing: border-box;
  font-family: Quicksand ;
 }
 
@@ -144,7 +145,6 @@ width: 100%;
   margin: 0 auto;
   gap: 40px;
   margin-top: 30px;
-  
 }
 .card{
   background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
@@ -233,145 +233,88 @@ font-weight: bold;
  
 }
 
-/* our story section */
-.stories-container{
-  background-image: url(../B11-A2-Kids-School/assets/bg.png);
-  width: 100%;
-  height: auto;
-  margin-top: 80px;
-}
 
-.card-story{
-  /*display: grid;*/
-  /*grid-template-columns: repeat(2, 2fr);*/
-  /*grid-template-rows: repeat(2, 200px 200px );*/
+/* story section */
+
+.main-section{
+background-image:url(../B11-A2-Kids-School/assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+
+}
+.box-container{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /*grid-template-rows: repeat(3, 1fr);
-  grid-gap: 20px;
-  padding: 20px 0;*/
-}
-.card-image{
-  /*display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  padding: 20px 0;*/
-}
-
-.main-title{
-  color:  rgb(0, 0, 0);
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-}
-.card-story{
-  border: 1px solid orange;
-  margin-top: 50px;
-}
-.card-image{
-  height: 600px;
-  width: 540px;
-  border-radius: 5px;
-  background-color: wheat;
-  
-}
-
-.story-btn{
-  background-color:rgb(60, 216, 232);
-  margin-top: -800px;
-  height: 45px;
-  width: 150px;
-  color: white;
-  font-size: 15px;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  margin-left: 40px;
+  grid-template-columns: auto auto auto auto;
+  gap: 1.5rem;
+  max-width: 1160px;
+  margin: 3.5rem auto;
 }
 .story-title{
-  color:  rgb(0, 0, 0);
-  font-size: 24px;
+  color:rgb(0, 0, 0);
+  font-size: 46px;
+  text-align: center;
+  margin-top: 4rem;
+}
+.card-1{
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.left-side-card{
+  padding:0;
+  margin: 0;
+  box-shadow: 4px 4px 8px;
+  border-radius: 10px ;
+  
+}
+
+.big-card-img{
+  width: 100%;
+  position: relative;
+}
+.big-card-img button{
+  position: absolute;
+  left: 3rem;
+  top:calc(100% - 25px);
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  background-color:rgb(60, 216, 232);
+
+}
+.big-card-img img{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 10px
+ 
+}
+.card-desc{
+  padding: 2rem;
+  padding-left: 3rem;
+}
+.desc-title{
+  font-size: 1rem;
   font-weight: bold;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-left: 40px;
+  padding: 2rem 0;
 }
-.story-des{
-  color: rgb(102, 102, 102);
-  font-size: 15px;
-  font-weight: 500;
-  margin-left: 40px;
-}
-
-
-/* group style start */
-.card-image,
-.card-image2,
-.card-image3,
-.card-image4,
-.card-image5 img{
-margin: 0px;
-border-top-right-radius: 5px;
-}
-
-.card-image2,
-.card-image3,
-.card-image4,
-.card-image5{
-  width: 290px;
-  height: 310px;
-  border-radius: 5px;
-  background-color: wheat;
+.big-card-title{
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+  font-weight: bold;
   
 }
 
 
-.story-btn1,
-.story-btn2,
-.story-btn3,
-.story-btn4{
-  background-color:rgb(149, 178, 38);
-  margin-top: -800px;
-  height: 35px;
-  width: 140px;
-  color: white;
-  font-size: 13px;
-  border: none;
-  border-radius: 30px;
-  margin-left: 20px;
+
+
+/* footer section */
+.footer{
+  background-color: rgb(1, 172, 253);
+  width: 100%;
+  height: 700px;
 }
-.story-btn2{
-  background-color:rgb(93, 88, 240);
+footer{
+  display: flex;
 }
-
-.story-title1,
-.story-title2,
-.story-title3,
-.story-title4{
-  color:  (0, 0, 0);
-  font-size: 14px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-left: 20px;
-}
-/* group style end */
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* responsive section */
@@ -379,8 +322,8 @@ border-top-right-radius: 5px;
 @media screen and (max-width:576px) {
   .navbar{
     justify-content: space-between;
-   
-  }
+
+   }
   .navbar{
     border: 1px solid orange;
     width: 100%;
@@ -457,6 +400,15 @@ border-top-right-radius: 5px;
     .story.large {
       grid-column: span 1;
       grid-row: span 1;
+    }
+    /* story section */
+    .card-1{
+      display: none;
+    }
+    .box-container{
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      margin: 0 auto;
     }
   }
   
