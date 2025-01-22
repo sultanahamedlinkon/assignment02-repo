@@ -249,8 +249,10 @@ font-weight: bold;
 
 
 .main-section{
-background-image:url(../B11-A2-Kids-School/assets/bg.png), 
-linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+background-image:url(../B11-A2-Kids-School/assets/bg.png)
+linear-gradient(to top, red, white);
+
+background-size:cover ;
 
 }
 
@@ -260,7 +262,10 @@ linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
   gap: 1.5rem;
   max-width: 1160px;
   margin: 3.5rem auto;
+ 
+ 
 }
+
 .story-title{
   color:rgb(0, 0, 0);
   font-size: 46px;
@@ -272,13 +277,19 @@ linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 .card-1{
   grid-column: span 2;
   grid-row: span 2;
+  
 }
 .left-side-card{
   padding:0;
   margin: 0;
   box-shadow: 4px 4px 8px;
   border-radius: 10px ;
+  background-color: white;
   
+  
+}
+.left-side-card img{
+  width:100%;
 }
 
 .big-card-img{
@@ -329,10 +340,11 @@ linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
   padding: 10px 25px;
 }
 .btn{
+  /*max-width: 500px;
   margin: 0 auto;
   justify-items: center;
   align-items: center;
-  text-align: center;
+  text-align: center;*/
 }
 
 
@@ -469,20 +481,10 @@ font-weight: 500;
       display: none;
     }
     .box-container{
-      grid-template-columns: repeat(2, 1fr);
-      width: 100%;
-      margin: 0 auto;
+      grid-template-columns: repeat(2, 1fr); 
     }
     .big-card-img button{
-      position: absolute;
-      left: 3rem;
-      top:calc(100% - 25px);
-      /*padding: 1rem;*/
-      border: none;
-      /*border-radius: 1rem;*/
-      color: white;
-      background-color:rgb(60, 216, 232);
-
+      padding: 5px;
     }
     /* footer section */
     .footer-container{
