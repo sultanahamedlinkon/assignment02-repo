@@ -249,8 +249,8 @@ font-weight: bold;
 
 
 .main-section{
-background-image:url(../B11-A2-Kids-School/assets/bg.png)
-linear-gradient(to top, red, white);
+background-image:url(../B11-A2-Kids-School/assets/bg.png),  url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
+
 
 background-size:cover ;
 
@@ -340,11 +340,12 @@ background-size:cover ;
   padding: 10px 25px;
 }
 .btn{
-  /*max-width: 500px;
+  /*max-width: 500px;*/
   margin: 0 auto;
-  justify-items: center;
-  align-items: center;
-  text-align: center;*/
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-bottom: 40px;
 }
 
 
@@ -402,10 +403,7 @@ font-weight: 500;
     margin: 0;
     padding: 0;
    }
-  /*.navbar{
-    border: 1px solid orange;
-    width: 100%;
-  }*/
+  
   hr{
     display: block;
     width: 100%;
