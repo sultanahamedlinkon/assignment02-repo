@@ -77,6 +77,9 @@
 .dot-icon{
 display: none;
 }
+hr{
+  display: none;
+}
 
 /* banner section style */
 
@@ -240,6 +243,7 @@ font-weight: bold;
 background-image:url(../B11-A2-Kids-School/assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 
 }
+
 .box-container{
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -251,7 +255,9 @@ background-image:url(../B11-A2-Kids-School/assets/bg.png), linear-gradient(0.00d
   color:rgb(0, 0, 0);
   font-size: 46px;
   text-align: center;
+  margin: 0 auto;
   margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 .card-1{
   grid-column: span 2;
@@ -302,19 +308,67 @@ background-image:url(../B11-A2-Kids-School/assets/bg.png), linear-gradient(0.00d
   font-weight: bold;
   
 }
+.view-btn{
+  background-color: black;
+  color: white;
+  /*height: 30px;
+  width: 90px;*/
+  border: none;
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 10px 25px;
+}
+.btn{
+  margin: 0 auto;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
 
 
 
 
 /* footer section */
-.footer{
-  background-color: rgb(1, 172, 253);
-  width: 100%;
-  height: 700px;
-}
 footer{
-  display: flex;
+ background: rgb(1, 172, 253);
+ width: 100%;
+ color: rgb(255, 255, 255);;
 }
+.footer-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ max-width: 1160px;
+ padding-bottom: 40px;
+}
+
+.footer-img{
+  display: flex;
+  align-items: center;
+}
+.footer-kids{
+font-size: 42px;
+font-weight: bold;
+}
+.footer-text{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.about{
+  font-size:24px ;
+  font-weight: bold;
+}
+.home-part li{
+list-style: none;
+font-size: 20px;
+font-weight: 500;
+}
+.keep{
+  font-size: 26px;
+  font-weight: 700;
+}
+
 
 
 /* responsive section */
@@ -322,11 +376,18 @@ footer{
 @media screen and (max-width:576px) {
   .navbar{
     justify-content: space-between;
-
+    width: 100%;
+    margin: 0;
+    padding: 0;
    }
-  .navbar{
+  /*.navbar{
     border: 1px solid orange;
     width: 100%;
+  }*/
+  hr{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
   }
   .logo img{
     margin-left: 20px;
@@ -386,21 +447,12 @@ footer{
   .card2,
   .card3{
     padding: 0px;
-  
+
   }
   .angle{
     display: none;
   }
-  /* our story section */
   
-    .stories-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .story.large {
-      grid-column: span 1;
-      grid-row: span 1;
-    }
     /* story section */
     .card-1{
       display: none;
@@ -409,6 +461,22 @@ footer{
       grid-template-columns: repeat(2, 1fr);
       width: 100%;
       margin: 0 auto;
+    }
+    .footer-container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 20px;
+    }
+    .footer-container{
+      margin: 0 auto;
+    }
+    .left-child{
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .about-section{
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
   }
   
