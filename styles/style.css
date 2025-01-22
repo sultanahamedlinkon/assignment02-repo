@@ -462,6 +462,18 @@ font-weight: 500;
       width: 100%;
       margin: 0 auto;
     }
+    .big-card-img button{
+      position: absolute;
+      left: 3rem;
+      top:calc(100% - 25px);
+      /*padding: 1rem;*/
+      border: none;
+      border-radius: 1rem;
+      color: white;
+      background-color:rgb(60, 216, 232);
+
+    }
+    /* footer section */
     .footer-container{
       display: grid;
       grid-template-columns: repeat(1, 1fr);
