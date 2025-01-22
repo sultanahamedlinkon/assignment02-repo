@@ -81,6 +81,14 @@ hr{
   display: none;
 }
 
+.marquee{
+  font-size: 20px;
+  color: white;
+  background-color: gray;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
 /* banner section style */
 
 .banner-container{
@@ -239,8 +247,10 @@ font-weight: bold;
 
 /* story section */
 
+
 .main-section{
-background-image:url(../B11-A2-Kids-School/assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+background-image:url(../B11-A2-Kids-School/assets/bg.png), 
+linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 
 }
 
@@ -404,8 +414,9 @@ font-weight: 500;
     display: none;
   }
   .dot-icon{
+    font-size: 20px;
     display: block;
-    
+    margin-right: 20px;
     text-align: end;
   }
    
@@ -468,7 +479,7 @@ font-weight: 500;
       top:calc(100% - 25px);
       /*padding: 1rem;*/
       border: none;
-      border-radius: 1rem;
+      /*border-radius: 1rem;*/
       color: white;
       background-color:rgb(60, 216, 232);
 
